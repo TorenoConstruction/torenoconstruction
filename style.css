@@ -53,7 +53,7 @@ video {
   left: 0;
   z-index: -1;
 }
-h3{
+h3,h2{
 color:#4F200D;
 font-family: "Montserrat", sans-serif;
 font-size: 30px;
@@ -62,15 +62,15 @@ font-size: 30px;
 display: flex;
 justify-content: center;
 }
-.heading{
+/* .heading{
 text-transform: uppercase;
 font-family: "Montserrat", sans-serif;
-}
+} */
 .section-about{
-      display: flex;
-      justify-content: space-around;
-      padding: 60px;
-      background-color: #F0F0F0;
+display: flex;
+justify-content: space-around;
+padding: 60px;
+background-color: #F0F0F0;
 
 }
 .about-us{
@@ -79,3 +79,33 @@ padding: 12px;
 font-family: "Montserrat", sans-serif;
 color:#4F200D;
 }
+
+.wrapper{
+display: flex;
+background-color: #F0F0F0;
+padding: 80px;
+color:#4F200D ;
+}
+.why-us{
+padding: 20px;
+font-family: "Montserrat", sans-serif;
+font-size: 16px;
+display: flex;
+
+}
+span{
+color:#F0F0F0 ;
+background-color:#4F200D ;
+font-family: "Montserrat", sans-serif;
+border-radius: 50px;
+font-size: 70px;
+margin: 40px;
+padding: 20px;
+}
+.services{
+display: flex;
+justify-content: space-around;
+background-color: #F0F0F0;
+padding: 60px;
+}
+
