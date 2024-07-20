@@ -111,7 +111,74 @@ h3,h2{
   font-family: "Montserrat", sans-serif;
 }
 .map{
-  
+  display: flex;
+  justify-content: center;
   background-color: #F0F0F0;
   padding: 50px;
 }
+.footer-container{
+  
+  background-color: #F0F0F0;
+  padding: 5px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color:#4F200D ;
+  font-size: 16px;
+}
+button{
+  padding: 30px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: #4F200D;
+  font-family: "Montserrat", sans-serif;
+  
+}
+.btn{
+  font-family: "Montserrat", sans-serif;
+  color: #F0F0F0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media all and(max-width: 800px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  /* .section-about{
+    display: flex;
+    flex-wrap: wrap;
+  } */
+   .wrapper{
+    display: flex;
+    flex-direction: column;
+    }
+    img{
+      width: 100px;
+    }
+    div.gmap_canvas, div.maproute, iframe{
+      width: 100%;
+    }
+  }
+
+  @media all and(max-width: 500px){
+    .nav{
+      display: flex;
+      flex-direction: column;
+    }
+    /* .section-about{
+      display: flex;
+      flex-wrap: wrap;
+    } */
+     .wrapper{
+      display: flex;
+      flex-direction: column;
+      }
+      img{
+        width: 100px;
+      }
+  }
