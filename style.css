@@ -144,7 +144,7 @@ button{
   font-size: 18px;
 }
 
-@media all and(max-width: 800px){
+@media all and (max-width: 800px){
   .nav{
     display: flex;
     flex-direction: column;
@@ -165,7 +165,7 @@ button{
     }
   }
 
-  @media all and(max-width: 500px){
+  @media all and (max-width: 500px){
     .nav{
       display: flex;
       flex-direction: column;
