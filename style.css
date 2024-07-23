@@ -85,24 +85,19 @@ h3,h2{
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   display: flex;
-
 }
-
 .services{
   display: flex;
   justify-content: space-around;
   background-color: #ebeaf0;
   padding: 60px;
-  
 }
-
 .services-rev{
   display: flex;
   justify-content: space-around;
   background-color: #ebeaf0;
   padding: 60px;
 }
-
 .price{
   display: flex;
   justify-content: center;
@@ -119,7 +114,6 @@ h3,h2{
   padding: 50px;
 }
 .footer-container{
-
   background-color: #ebeaf0;
   padding: 5px;
 }
@@ -137,7 +131,6 @@ button{
   border-radius: 30px;
   background-color: #0d5e9d;
   font-family: "Montserrat", sans-serif;
-
 }
 .btn{
   font-family: "Montserrat", sans-serif;
