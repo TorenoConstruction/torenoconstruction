@@ -93,6 +93,14 @@ h3,h2{
   justify-content: space-around;
   background-color: #ebeaf0;
   padding: 60px;
+  
+}
+
+.services-rev{
+  display: flex;
+  justify-content: space-around;
+  background-color: #ebeaf0;
+  padding: 60px;
 }
 
 .price{
@@ -144,7 +152,6 @@ button{
     .section-about{
       flex-wrap: wrap;
     } 
-    
   }
 @media all and (max-width: 800px){
   .nav{
@@ -185,5 +192,12 @@ button{
     } 
     .services{
       flex-wrap: wrap;
+      margin:0;
+    }
+    .services-rev{
+      flex-wrap: wrap-reverse;
+    }
+    .services-img{
+      width: 300px;
     }
   }
