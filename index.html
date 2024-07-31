@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toreno Construction</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- nav -->
      <nav class="nav">
         <!-- <a href="#" class="logo"><img class="logo" src="media/torenologosm.JPG" alt="torenologosm" width="50px"></a> -->
-        
-        <a class="item" href="#">Home</a>
-        <a class="item" href="#">Services</a>
-        <a class="item" href="#">Contact Us</a>
-        <a class="item" href="#">Free Quote</a>
+        <a class="item name" href="index.html">Toreno Construction</a>
+        <a class="item" href="index.html">Home</a>
+        <a class="item" href="#about">About US</a> <!-- drop down for why us -->
+        <a class="item" href="#services">Our Services</a>
+        <a class="item" href="#prices">Prices</a>
+        <a class="item" href="C:\Users\Olessya VM\Desktop\TorenoConstruction\Contact form\contactform.html">Contact Us</a> <!-- drop down for address -->
+        <a class="item" href="#form">FREE ESTIMATE</a>
         
      </nav>
      <div class="header">
@@ -31,7 +41,7 @@
      
      <!-- about us -->
     <div class="section-header">
-        <h3>About Us</h3>
+        <h3><a href="about"></a> About Us</h3>
     </div>
     <div class="section-about">
         <img src="media/aboutus.png" alt="about us" width="35%"/>
@@ -87,7 +97,7 @@
     <!-- Our Services -->
 
     <div class="section-header">
-        <h3>Our Services</h3>
+        <h3><a href="services"></a>Our Services</h3>
     </div>
     <div class="services">
         
@@ -124,7 +134,7 @@
     <!-- prices -->
 
     <div class="section-header">
-        <h3>Prices</h3>
+        <h3> <a href="prices"></a>Prices</h3>
     </div>
 
     <div class="price">
@@ -141,8 +151,8 @@
 
    <!-- our address -->
 
-   <div class="section-header">
-    <h3>Address</h3>
+   <!-- <div class="section-header">
+    <h3><a href="contact"></a> SERVICE AREAS</h3>
 </div>
 
     <div class="map">
@@ -153,20 +163,165 @@
             <a class="google-maps-html" href="https://kbj9qpmy.com/bp" id="grab-map-authorization">Internet Provider</a>
             <style>#canvas-for-googlemap img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
         </div>
+    </div> -->
+
+    <!-- free estimate -->
+    <div class="section-header">
+        <h3><a href="form"></a> Free Estimate</h3>
     </div>
+    <section class="contact">
+        <div class="container">
+          <div class="left">
+            <div class="form-wrapper">
+              <div class="contact-heading">
+                <h1>Let's work together<span>.</span></h1>
+                <p class="text">Or rich us via: <a href="mailto:info@torenoconstruction.com">info@torenoconstruction.com</a></p>
+              </div>
+              <form action="index.html" method="post" class="contact-form">
+                <div class="input-wrap">
+                  <input type="text" class="contact-input" autocomplete="off" name="First Name" required>
+                  <label>First Name</label>
+                  <i class="icon fa-solid fa-address-card"></i>
+                </div>
+  
+                <div class="input-wrap">
+                  <input type="text" class="contact-input" autocomplete="off" name="Last Name" required>
+                  <label>Last Name</label>
+                  <i class="icon fa-solid fa-address-card"></i>
+                </div>
+  
+                <div class="input-wrap w-100">
+                  <input class="contact-input" autocomplete="off" name="email" type="email" required>
+                  <label>E-mail</label>
+                  <i class="icon fa-solid fa-envelope"></i>
+                </div>
+  
+                <div class="input-wrap textarea w-100">
+                  <textarea class="contact-input" autocomplete="off" name="Message" required></textarea>
+                  <label>Message</label>
+                  <i class="icon fa-solid fa-inbox"></i>
+                </div>
+                <div class="contact-buttons">
+                  <button class="btn upload">
+                    <span>
+                      <i class="fa-solid fa-paperclip"></i> Add Attachment
+                    </span>
+                    <input type="file" name="Attachment">
+                  </button>
+                  <input type="submit" value="Send message" class="btn">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="right">
+            <div class="image-wrapper">
+              <img src="./media/img.jpg" class="img">
+            </div>
+            </div>
 
-
+        </div>
+      </section>
     <!-- footer -->
     <div class="section-header">
         <h3>Contact us</h3>
     </div>
-    <div class="footer-container">
-        <br>
-        <p class="footer">TEL: +1(647)555-5555</p>
-        <p class="footer">
-            <a href="mailto: info@torenoconstruction.com">E-mail</a>
-        </p>
-    </div>
+    <footer class="footer1">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="col1">
+                    <a href="#" class="brand">Toreno Construction</a>
+                    <ul class="media-icons">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <ul class="menu">
+                        <li>
+                            <h4>About</h4>
+                        </li>
+                        <li>
+                            <a href="#">Our Services</a> 
+                        </li>
+                        <li>
+                            <a href="#">Prices</a> 
+                        </li>
+                        <li>
+                            <a href="#">Service Area</a> 
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a> 
+                        </li>
+                        <li>
+                            <a href="#">Free Estimate</a> 
+                        </li>
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <h4>Resources</h4>
+                        </li>
+                        <li>
+                            <a href="#">Docs</a> 
+                        </li>
+                        <li>
+                            <a href="#">ebooks</a> 
+                        </li>
+                        <li>
+                            <a href="#">blog</a> 
+                        </li>
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <h4>Contact</h4>
+                        </li>
+                        <li>
+                            <a href="#">Location</a> 
+                        </li>
+                        <li>
+                            <a href="#">Sales</a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <h4>PRIVACY POLICY</h4>
+                    <p>Toreno Construction does not collect or share personal information. 
+                    We follow generally accepted industry standards to protect the personal 
+                    information submitted to us, both during transmission and once we receive it. 
+                    In addition, we value your business and respect your right to privacy. If you 
+                    have questions or comments about our privacy policy, please feel free to contact us.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-container">
+                    <p>
+                        Toreno Construction - All Rights Reserved
+                    </p>
+                    <ul class="service-icons">
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>  
+                            <a href="tel: +1(647)554-5777">+1(647)554-5777</a>   
+                            
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: info@torenoconstruction.com">info@torenoconstruction.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
