@@ -46,7 +46,12 @@ body{
   text-decoration: none;
   
 }
-
+.name span{
+  font-weight: 300;
+}
+.header span{
+  font-weight: 300;
+}
 .header{
     display: flex;
     justify-content: center;
