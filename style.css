@@ -208,7 +208,7 @@ button{
     font-size: 15px;
   }
   .header{
-    font-size: 20px;
+    font-size: 18px;
   }
   .section-about{
     flex-wrap: wrap;
@@ -228,7 +228,7 @@ button{
       flex-direction: column;
     }
     .header{
-      font-size: 20px;
+      font-size: 15px;
     }
     .about-us{
       flex-wrap: wrap;
