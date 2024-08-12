@@ -2,6 +2,7 @@
 body{
     margin: 0;
     background-color: #f7f7f7;
+    
   }
  .nav{
     background:  #ebeaf0;
@@ -36,6 +37,47 @@ body{
     flex-wrap: wrap;
     transition: 0.3s;
 }
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropbtn{
+  background-color: #ebeaf0;
+  color: #0d5e9d;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #e4e3e9;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a{
+  color: #0d5e9d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #b9b3be}
+.dropbtn a, i{
+  color: #0d5e9d;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
 .name {
   margin-right: auto;
   font-family: "Poppins", sans-serif;
@@ -44,7 +86,6 @@ body{
   font-size: 1.8em;
   color:#0d5e9d;
   text-decoration: none;
-  
 }
 .name span{
   font-weight: 300;
@@ -153,7 +194,7 @@ h3,h2{
   padding: 50px;
 }
 
-button{
+.call-btn{
   padding: 30px;
   margin: 10px;
   border-radius: 30px;
@@ -181,10 +222,85 @@ button{
   color:#0d5e9d ;
   font-size: 16px;
 }
+/*Hamburger menu*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ebeaf0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#0d5e9d;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidebar a:hover {
+  color: #0d5e9d;
+  background-color: #b9b3be;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ebeaf0;
+  color: #0d5e9d;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #b9b3be;
+} 
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 
 /* Mobile Adaptation */
+@media (max-width: 920px ){
+  .item{
+    display: none;
+  }
+  name{
+    font-size: 18px;
+  }
+  .openbtn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ebeaf0;
+  color: #0d5e9d;
+    padding: 10px 15px;
+    border: none;
+  }
+  .openbtn:hover {
+    background-color: #b9b3be;
+  }
+  .dropbtn{
+    display: none;
+  }
+}
 @media all and (max-width: 820px){
   .wrapper{
         flex-wrap: wrap;
@@ -192,6 +308,9 @@ button{
     .section-about{
       flex-wrap: wrap;
     } 
+    .dropbtn{
+      display: none;
+    }
     /* img{
       width: 100px;
     }
