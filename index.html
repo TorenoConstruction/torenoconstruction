@@ -20,15 +20,37 @@
 <body>
     <!-- nav -->
      <nav class="nav">
+        
         <!-- <a href="#" class="logo"><img class="logo" src="media/torenologosm.JPG" alt="torenologosm" width="50px"></a> -->
-        <a class="item name" href="index.html">Toreno<span>Construction</span></a>
+        <a class="name" href="index.html">Toreno<span>Construction</span></a>
         <a class="item" href="index.html"> Home </a>
         <a class="item" href="#about"> About US </a> <!-- drop down for why us -->
-        <a class="item" href="#services"> Our Services </a>
-        <a class="item" href="#prices"> Prices </a>
+        <!-- <a class="item" href="#services"> Our Services </a> -->
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#services"> Our Services  <i class="fa-solid fa-caret-down"></i> </a></button>
+            <div class="dropdown-content">
+            <a href="#kitchen">Kitchen Renovation</a>
+            <a href="#bathroom">Bathroom Renovation</a>
+            <a href="#basement">Basement Renovation</a>
+            <a href="#fullh">Full-house Renovation</a>
+            </div>
+          </div>
+
+        <a class="item" href="#contact">Quote</a>
         <a class="item" href="#contact"> Contact Us </a> <!-- drop down for address -->
-        <a class="item" href="#contact"> FREE ESTIMATE </a>
-        
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Quote</a>
+            <a href="#contact"> Contact Us</a>
+          </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+            
+          </div>
      </nav>
      <div class="header">
         <h1>Toreno<span>Construction</span></h1>
@@ -53,7 +75,7 @@
             <p class="about-us">At Toreno Construction, we pride ourselves on transforming houses into dream homes through expert craftsmanship and unparalleled attention to detail.
             With over a decade of experience, we have established ourselves as a trusted name in the renovation industry, specializing in kitchen, bathroom, basement, and full house renovations.</p>
             <p class="about-us">At Toreno Construction, we are dedicated to delivering superior craftsmanship and exceptional service on every project. From concept to completion, you can trust us to make your renovation dreams a reality.</p>
-            <button><a class="btn" href="tel: +1(647)554-5777">Call us now</a></button>
+            <button class="call-btn"><a class="btn" href="tel: +1(647)554-5777">Call us now</a></button>
         </div>
     </div>
 
@@ -109,6 +131,9 @@
         
         <img class="services-img" src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="kitchen" width="400px"/>
         <div>
+            <div>
+                <div id="kitchen"></div>
+            </div>
             <h2>Kitchen Renovations</h2>
             <p class="about-us">A kitchen renovation refreshes your home’s heart, combining style and functionality. 
                 Updating cabinets, countertops, and appliances enhances both appearance and efficiency. 
@@ -118,6 +143,9 @@
     </div>
     <div class="services-rev">
         <div>
+            <div>
+                <div id="bathroom"></div>
+            </div>
             <h2>Bathroom Renovations</h2>
             <p class="about-us">A bathroom renovation revitalizes your space, merging elegance with efficiency. 
                 Modern fixtures, stylish tiles, and smart storage solutions enhance both form and function. 
@@ -130,6 +158,9 @@
     <div class="services">
         <img class="services-img" src="https://images.unsplash.com/photo-1646592491963-07ff7e7c31f7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="basement" width="400px"/>
         <div>
+            <div>
+                <div id="basement"></div>
+            </div>
             <h2>Basement Renovations</h2>
             <p class="about-us">A basement renovation transforms underutilized space into a functional, inviting area. 
                 Upgrading finishes, adding insulation, and incorporating smart lighting can turn a dark, 
@@ -139,6 +170,9 @@
     </div>
     <div class="services-rev">
         <div>
+            <div>
+                <div id="fullh"></div>
+            </div>
             <h2>Full House Renovations</h2>
             <p class="about-us">A full house renovation revitalizes every corner of your home, blending modern design with enhanced functionality. 
                 From updating kitchens and bathrooms to reimagining living spaces and flooring, this comprehensive overhaul improves aesthetics, 
@@ -150,7 +184,7 @@
 
     <!-- prices -->
 
-    <div class="section-header">
+    <!-- <div class="section-header">
         <div>
             <div id="prices"></div>
         </div>
@@ -167,7 +201,7 @@
 
     <div class="price">
         <p>financing available</p>
-    </div>
+    </div> -->
 
    <!-- our address -->
 
@@ -190,7 +224,7 @@
         <div>
             <div id="contact"></div>
         </div>
-        <h3><a href="form"></a> Free Estimate</h3>
+        <h3><a href="form"></a> Book your appointment</h3>
     </div>
     <section class="contact">
         <div class="container">
@@ -241,12 +275,11 @@
               <img src="./media/img.jpg" class="img">
             </div>
             </div>
-
         </div>
       </section>
     <!-- footer -->
     <div class="section-header">
-        <h3>Contact us</h3>
+        <h3></h3>
     </div>
     <footer class="footer1">
         <div class="footer-top">
